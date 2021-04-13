@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Fat Font';
+    src: url('fonts/freefatfont-regular.woff2') format('woff2'),
+         url('fonts/freefatfont-regular.woff') format('woff');
+}
 
 /* Home */
 body {
@@ -47,13 +52,13 @@ header .scroll div {
   color: white;
   background: #242424;
   white-space: nowrap;
-  animation: scroll 40s linear infinite;
-  animation-delay: -40s;
+  animation: scroll 60s linear infinite;
+  animation-delay: -60s;
 }
 
 header .scroll div:nth-child(2) {
-  animation: scroll2 40s linear infinite;
-  animation-delay: -20s;
+  animation: scroll2 60s linear infinite;
+  animation-delay: -30s;
 }
 
 /* hero */
@@ -127,6 +132,39 @@ header .scroll div:nth-child(2) {
   color: #242424;
   transition: .3s;
   font-weight: 800;
+}
+
+/* About */
+
+header {
+  position: relative;
+
+}
+
+header .logo {
+  max-width: 15%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Fat Font', serif;
+  /* font-weight: 900; */
+  font-size: 300px;
+  letter-spacing: 10px;
+  line-height: .75;
+  color: #232332;
+  text-transform: uppercase;
+  margin: 40px;
+}
+
+.floating-cookie {
+  position: relative;
+  width: 60%;
+}
+
+.floating-cookie img {
+  width: 800px;
+  margin: 0 auto;
 }
 
 /* scrolling banner */
