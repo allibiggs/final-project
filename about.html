@@ -17,48 +17,76 @@
 
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="#">How It Works</a>
+          <a href="#">Cookies</a>
           <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
         </div>
 
         <!-- Use any element to open the sidenav -->
         <span onclick="openNav()"><i class="fas fa-minus"></i></span>
 
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="main">
-        <header>
-          <img class="logo" src="images/mfc-logo.png" alt="Matt's Fat Cookies"/>
-        </header>
+          <div id="main">
+            <header>
+              <img class="logo" src="images/mfc-logo.png" alt="Matt's Fat Cookies"/>
+            </header>
 
-        <main>
-          <div class="floating">
-            <h1>Tampa's <br>First <br>Half Pound <br>Cookie</h1>
-            <img src="images/cream.png" alt="C.R.E.A.M. Cookie"/>
-          </div>
+            <main>
 
-          <div class="bar"></div>
+              <section class="floating">
+                <div class="title">
+                  <h1>Tampa's <br>First <br>Half Pound <br>Cookie</h1>
+                  <img src="images/cream.png" alt="C.R.E.A.M.">
+                  <div class="bar"></div>
+                </div>
+              </section>
 
-          <div class="paragraph">
-          <p>We are a husband and wife team working hard to bring the highest quality, <span>MOST THICC COOKIES</span> to the Tampa Bay market.</p>
+              <div class="about">
+                <p>We are a husband and wife team working hard <br>to bring the highest quality,
+                  <br><span>MOST THICC COOKIES</span>
+                  <br>to the Tampa Bay market and beyond!</p>
 
-          <p>From our kitchen to yours, we put lots of love and careful attention in each cookie to better expand your taste buds! We hope you enjoy our work as much as we enjoy bringing it to you.</p>
+                  <p>From our kitchen to yours, we put lots of love and
+                    <br>careful attention in each cookie to better expand your
+                    <br>taste buds! We hope you enjoy our work as much
+                    <br>as we enjoy bringing it to you.</p>
 
-          <p>We work on a limited availability basis for the time being as we grow the brand the right way. Check our Instagram for the most accurate drop announcements.</p>
+                    <p>We work on a limited availability basis for the time
+                      <br>being as we grow the brand the right way.
+                      <br>Check our Instagram for the most accurate
+                      <br>drop announcements.</p>
 
-          <button type="button" name="follow">Follow Us</button>
-        </div>
-        </main>
+                      <a href="https://instagram.com/mattsfatcookies" class="button" target="_blank">Follow Us</a>
+
+                </div>
+
+                <div class="container">
+                  <h2>Did you have a dream last night where <br>you imagined the most amazing cookie <br>flavor ever to exist? If yes, we'd love <br>to hear from you.</h2>
+                  <!-- <form action="action_page.php"> -->
+                  <form class="contact-form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+
+                    <label for="firstname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email address">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                  </form>
+                </div>
+            </main>
+
 
         <footer>
-          <a href="#">Contact</a>
+          <a class="contact" href="#">Contact</a>
 
-          <i class="fab fa-instagram"></i>
+          <a href="https://instagram.com/mattsfatcookies" target="_blank"><i class="fab fa-instagram"></i></a>
         </footer>
       </div>
-
-
 
   </body>
 </html>
