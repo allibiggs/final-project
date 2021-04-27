@@ -1,4 +1,6 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+// side nav
+ // Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -10,14 +12,17 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
+
+// carousel
 $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
   contain: true
 });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
+
+
+// smooth scroll
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -42,4 +47,12 @@ $(document).ready(function(){
     } // End if
   });
 });
-</script>
+
+// popup
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

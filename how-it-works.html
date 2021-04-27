@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a07d260820.js" crossorigin="anonymous"></script>
     <script src="scripts/scripts.js" type="text/javascript"></script>
 
@@ -28,7 +29,7 @@
         <span onclick="openNav()"><i class="fas fa-minus"></i></span>
 
           <div id="main">
-            <header>
+            <header id="top">
               <img class="logo" src="images/mfc-logo.png" alt="Matt's Fat Cookies"/>
             </header>
 
@@ -87,49 +88,69 @@
 
 
 <!-- Cookie image carousel-->
-      <h2>Our Cookies</h2>
+  <div class="cookie-carousel">
+       <h2>Our Cookies</h2>
 <!-- Flickity HTML init -->
         <div class="carousel" data-flickity='{ "groupCells": true }' id="carousel">
           <div class="carousel-cell">
-            <img src="images/cream.png" alt="">
+            <img src="images/cream-half.png" alt="CREAM">
+            <h4>C.R.E.A.M.</h4>
+            <p>Crushed up Oreos and chocloate chip cookies along with white and milk chocolate chips. Because Wu-Tang.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/chocchip.png" alt="">
+            <img src="images/chocchip-half.png" alt="Chocolate Chips">
+            <h4>Chocolate Chip<sup>2</sup></h4>
+            <p>Regular and mini chocolate chips in one cookie, for maximum chocolate chip consumption.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/cranberries.png" alt="">
+            <img src="images/cran-half.png" alt="Cranberries">
+            <h4>The Cranberries</h4>
+            <p>Craisin and white chocolate cookie with a hint of orange zest. So light yet perfectly sweet.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/chocnuts.png" alt="">
+            <img src="images/chocnuts-half.png" alt="Choco Nuts">
+            <h4>Choco-nuts</h4>
+            <p>Milk chocolate chips and macademia nuts. The crunch is where its at.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/candyshop.png" alt="">
+            <img src="images/candyshop-half.png" alt="Candy Shop">
+            <h4>Candy Shop</h4>
+            <p>Peanut butter cookie base with chocolate chips, MnM's, toffee pieces and stuffed with a Reese's cup. Not for the faint of heart.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/cookiemonster.png" alt="">
+            <img src="images/monster-half.png" alt="Cookie Monster">
+            <h4>Cookie Monster</h4>
+            <p>Neon blue sugar cookie base, stuffed with chocolate chips. Plus an entire Oreo and some chocolate chip cookie dough. He's out of control.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/quar.png" alt="">
+            <img src="images/quar-half.png" alt="Quarantine Party">
+            <h4>Quarantine Party</h4>
+            <p>Sugar cookie base with a sh*t ton of sprinkles and confetti chips. Oh, and its DIPPED in white chocolate.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/redvelvet.png" alt="">
+            <img src="images/redvelvet-half.png" alt="Red Velvet">
+            <h4>Red Velvet</h4>
+            <p>Red velvet cake cookie overloaded with white chocolate chips, topped with mini milk chocolate chips.</p>
           </div>
 
           <div class="carousel-cell">
-            <img src="images/york.png" alt="">
+            <img src="images/york-half.png" alt="York Stuffed">
+            <h4>York Stuffed</h4>
+            <p>Chocolate peppermint cookie, white chocolate chips, stuffed with an XL York patty.</p>
           </div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
         </div>
+      </div>
 
-
+      <div class="to-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+      </div>
       </main>
 
 
