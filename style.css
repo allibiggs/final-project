@@ -45,6 +45,8 @@ footer a:hover {
 
 svg.svg-inline--fa.fa-instagram.fa-w-14 {
     font-size: 30px;
+    color: white;
+    margin-top: 0;
 }
 
 footer a:first-child {
