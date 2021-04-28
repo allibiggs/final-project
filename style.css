@@ -592,12 +592,11 @@ body#cookies {
     height: 200px;
     top: 200px;
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
     text-align: center;
     background: #232323;
     color: white;
-    border-radius: 5px;
-  }
+    }
 
 .slide-header h3 {
     font-size: 30px;
