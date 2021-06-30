@@ -13,9 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
 
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a07d260820.js" crossorigin="anonymous"></script>
-    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCWPKEFR1M"></script>
     <script>
@@ -32,23 +36,23 @@
         <nav>
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn"   onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
             <a href="how-it-works.html">How It Works</a>
             <a href="about.html">About</a>
             <a href="cookies.html">Cookies</a>
+            <a href="#">Contact</a>
           </div>
         </nav>
 
         <!-- Use any element to open the sidenav -->
         <span onclick="openNav()"><i class="fas fa-minus"></i></span>
-
-          <div id="main">
-            <div id="top">
-              <img class="logo" src="images/mfc-logo.png" alt="Matt's Fat Cookies" title="Matt's Fat Cookies"/>
-            </div>
       </header>
 
-            <main>
+      <main>
+
+          <div id="top">
+            <a href="index.html"><img class="logo" src="images/mfc-logo.png" alt="Matt's Fat Cookies" title="Matt's Fat Cookies"/></a>
+          </div>
+
 <!-- How it works slides -->
             <div class="slide-header">
               <a href="#slide-1">
@@ -59,10 +63,10 @@
 
 
           <div class="slide slide-1" id="slide-1">
-            <a href="images/p1.png" data-lightbox="image-1" data-title="Chocolate PB Cookie"><img src="images/p1.png" alt="Chocolate PB Cookie" title="Chocolate PB Cookie"></a>
-              <div class="slide-text">
-                <h2>Check for the next drop.</h2>
-                <p>The best way to know when orders are open is to check out our Instagram. The date is also listed at the very top of the Home page. You know, the big scrolling banner you saw.</p>
+              <img src="images/p1.png" alt="Chocolate PB Cookie" title="Chocolate PB Cookie">
+              <div class="article">
+                <h2>Check for the drop.</h2>
+                <p>The best way to know when orders are open is to check out our Instagram. The date is also listed at the very top of the Home page. You know, the big scrolling banner.</p>
 
                 <p>Once the drop is open, a link to order will show up on the Home page (trust us, you won't be able to miss it.) Orders open about every two weeks.</p>
 
@@ -72,8 +76,8 @@
             </div>
 
         <div class="slide slide-2" id="slide-2">
-          <a href="images/p2.png" data-lightbox="image-1" data-title="Pumpkin Pie Cookie"><img src="images/p2.png" alt="Pumpkin Pie Cookie" title="Pumpkin Pie Cookie"></a>
-            <div class="slide-text">
+            <img src="images/p2.png" alt="Pumpkin Pie Cookie" title="Pumpkin Pie Cookie">
+            <div class="article">
               <h2>Choose your flavors.</h2>
               <p>This is the easy part. We're constantly updating our cookies and coming up with cool new flavors for you to enjoy. Take a look at our IG or our Cookies page for a complete list of what's available.</p>
 
@@ -85,13 +89,13 @@
         </div>
 
         <div class="slide slide-3" id="slide-3">
-          <a href="images/p3.png" data-lightbox="image-1" data-title="Cookie Box"><img src="images/p3.png" alt="Cookie Box" title="Cookie Box"></a>
-            <div class="slide-text">
+            <img src="images/p3.png" alt="Cookie Box" title="Cookie Box">
+            <div class="article">
               <h2>Go get 'em.</h2>
               <p>Choose the best option for you during checkout:</p>
 
                 <ol>
-                  <li>Pickup at any of the Revolution Ice Cream locations around Tampa Bay. Grab a pint of Matt's Fatty Rolls while you're at it.</li>
+                  <li>Pickup at any Revolution Ice Cream location around Tampa Bay. Grab a pint of Matt's Fatty Rolls while you're at it.</li>
                   <li>Local delivery: We'll hand deliver this precious cargo right to your door, wrapped in a big bow.</li>
                   <li>Shipping: Now offered nationwide, for thicc bois from Jersey to the Golden State.</li>
                 </ol>
@@ -161,7 +165,6 @@
             <p>Chocolate peppermint cookie, white chocolate chips, stuffed with an XL York patty.</p>
           </div>
         </div>
-      </div>
 
       <div class="to-top">
         <a href="#top"><i class="fas fa-chevron-up"></i></a>
@@ -175,9 +178,8 @@
 
           <a href="https://instagram.com/mattsfatcookies" target="_blank"><i class="fab fa-instagram"></i></a>
         </footer>
-      </div>
 
-      <script src="scripts/flickity.pkgd.min.js" type="text/javascript"></script>
+      <script src="scripts/flickity.pkgd.min.js"></script>
 
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <script src="lightbox/src/js/lightbox.js"></script>
