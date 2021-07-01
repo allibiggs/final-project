@@ -147,7 +147,6 @@ header#home {
   background: #232323;
   width: 100%;
   height: 8vh;
-  overflow: hidden;
 }
 
 header .scroll {
@@ -173,8 +172,15 @@ header .scroll div:nth-child(2) {
 }
 
 /******************************************** HERO IMAGE / LOGO */
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero {
   max-width: 80%;
+  flex: 1;
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -189,8 +195,10 @@ header .scroll div:nth-child(2) {
 }
 
 .hero-image {
+  margin: 0 auto;
   width: 100%;
   max-width: 750px;
+  min-width: 500px;
   transition: .5s;
   padding: 50px 0;
 }
@@ -288,7 +296,7 @@ header .scroll div:nth-child(2) {
 h1 {
   font-family: 'Fat Font', serif;
   font-weight: normal;
-  font-size: 15rem;
+  font-size: 10rem;
   line-height: .7;
   color: #232323;
   text-transform: uppercase;
@@ -317,9 +325,9 @@ h1 {
 }
 
 .about {
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 4% 2%;
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
 }
@@ -354,9 +362,9 @@ h1 {
 
 /******************************************** Aside */
 aside.creamery {
-  width: 45%;
+  width: 60%;
   display: block;
-  float: right;
+  /* float: right; */
 }
 
 aside h2 {
@@ -438,13 +446,6 @@ input[type=submit]:hover {
   margin: 20px;
 }
 
-@media (max-width: 950px) {
-.container {
-  width: 75%;
-  margin: 2% auto;
-  clear: both;
-}
-
 aside.creamery {
 float: none;
 width: 65%;
@@ -457,9 +458,15 @@ figcaption {
 margin: 0 auto;
 }
 
-}
 
-/* ******************** START HOME MIN-WIDTH 950 MEDIA QUERY ******************** */
+/* @media (max-width: 950px) {
+.container {
+  width: 75%;
+  margin: 2% auto;
+  clear: both;
+  } */
+
+/* ******************** START ABOUT MIN-WIDTH 950 MEDIA QUERY ******************** */
 @media (min-width: 950px) {
   .about {
     text-align: left;
@@ -467,19 +474,21 @@ margin: 0 auto;
     width: 35%;
     min-width: 475px;
   }
-}
 
-@media (max-width: 950px) {
-  h1 {
-    font-size: 10rem;
+  aside.creamery {
+    width: 45%;
+    display: block;
+    float: right;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1000px) {
   h1 {
-    font-size: 6rem;
+    font-size: 15rem;
   }
 }
+
+
 
 /************** ABOUT ABOUT ABOUT ABOUT ABOUT ******************/
 
@@ -560,10 +569,10 @@ body#cookies {
 
 .column {
   position: relative;
-  width: 33.3%;
+  width: 100%;
+  height: 110%;
   margin-bottom: 16px;
   padding: 0 1%;
-  height: 450px;
 }
 
 .card {
@@ -628,17 +637,17 @@ body#cookies {
 
 
 /* ******************** START HOME MIN-WIDTH 1200 MEDIA QUERY ******************** */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 800px) {
   .column {
     display: flex;
     width: 50%;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 1000px) {
   .column {
-    width: 100%;
-    height: 500px;
+    width: 33.3%;
+    height: 450px;
   }
 }
 
