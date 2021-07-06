@@ -181,7 +181,6 @@ header .scroll div:nth-child(2) {
 .hero {
   max-width: 80%;
   flex: 1;
-  position: relative;
   margin: 0 auto;
   text-align: center;
 }
@@ -198,7 +197,7 @@ header .scroll div:nth-child(2) {
   margin: 0 auto;
   width: 100%;
   max-width: 750px;
-  min-width: 500px;
+  min-width: 450px;
   transition: .5s;
   padding: 50px 0;
 }
@@ -247,14 +246,6 @@ header .scroll div:nth-child(2) {
     display: none;
   }
 
-  .logo-hero {
-    padding-top: 20px;
-  }
-
-  .hero-image {
-    padding-top: 50px;
-  }
-
   /******************************************************** Side Nav */
   .open-nav {
       display: block;
@@ -284,7 +275,6 @@ header .scroll div:nth-child(2) {
     }
   }
 
-/* ******************** END HOME MIN-WIDTH 880 MEDIA QUERY ******************** */
 /************** HOME HOME HOME HOME HOME HOME ******************/
 
 
@@ -397,7 +387,7 @@ aside .button {
   padding: 5%;
   width: 50%;
   min-width: 500px;
-  margin: 2%;
+  margin: 3% auto;
 }
 
 .container h2 {
@@ -437,13 +427,13 @@ input[type=submit]:hover {
 .thank-you h1 {
   font-family: 'Fat Font';
   font-weight: normal;
-  font-size: 60px;
+  font-size: 2rem;
 }
 
 .thank-you p {
-  font-size: 20px;
+  font-size: 1.4rem;
   display: inline-block;
-  margin: 20px;
+  margin: 4%;
 }
 
 aside.creamery {
@@ -458,14 +448,6 @@ figcaption {
 margin: 0 auto;
 }
 
-
-/* @media (max-width: 950px) {
-.container {
-  width: 75%;
-  margin: 2% auto;
-  clear: both;
-  } */
-
 /* ******************** START ABOUT MIN-WIDTH 950 MEDIA QUERY ******************** */
 @media (min-width: 950px) {
   .about {
@@ -479,6 +461,10 @@ margin: 0 auto;
     width: 45%;
     display: block;
     float: right;
+  }
+
+  .container {
+    margin: 3%;
   }
 }
 
@@ -651,8 +637,6 @@ body#cookies {
   }
 }
 
-/* ******************** END HOME MIN-WIDTH 1200 MEDIA QUERY ******************** */
-
 /************** COOKIES COOKIES COOKIES COOKIES COOKIES ******************/
 
 
@@ -669,7 +653,7 @@ body#cookies {
 .slide-header h3 {
   font-size: 2rem;
   text-transform: uppercase;
-  padding-top: 4%;
+  padding: 2%;
 }
 
 .slide-header p {
@@ -689,18 +673,17 @@ body#cookies {
 }
 
 .article {
-  width: 40%;
-  margin-top: 5%;
-  display: inline-block;
-}
+  width: 80%;
+  }
 
 .slide img {
-  width: 40%;
-  max-width: 500px;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2%;
   min-width: 400px;
   padding-top: 5%;
   margin-right: 35px;
-}
+  }
 
 .slide h2 {
   font-weight: 900;
@@ -762,9 +745,8 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
 }
 
 .carousel-cell {
-  width: 28%;
+  width: 75%;
   height: 500px;
-  margin-right: 2%;
 }
 
 .carousel img {
@@ -798,38 +780,37 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
   cursor: pointer;
 }
 
-/* ******************** START HOW IT WORKS MIN-WIDTH 1200 MEDIA QUERY ******************** */
-@media screen and (max-width: 1200px) {
+/* ******************** start HOW IT WORKS MIN-WIDTH 800 MEDIA QUERY ******************** */
+@media screen and (min-width: 650px) {
   .carousel-cell {
     width: 43%;
+    margin-right: 8%;
   }
 }
-/* ******************** END HOW IT WORKS MIN-WIDTH 1200 MEDIA QUERY ******************** */
+
+/* ******************** START HOW IT WORKS MIN-WIDTH 1200 MEDIA QUERY ******************** */
+@media screen and (min-width: 1000px) {
+  .carousel-cell {
+    width: 28%;
+    margin-right: 2%;
+  }
+}
 
 /* ******************** START HOW IT WORKS MIN-WIDTH 1100 MEDIA QUERY ******************** */
 
-@media screen and (max-width: 1050px) {
-  .article {
-    width: 80%;
+@media screen and (min-width: 1050px) {
+    .article {
+      width: 40%;
+      margin-top: 5%;
+      display: inline-block;
     }
 
-  .slide img {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 2%;
+    .slide img {
+      width: 40%;
+      padding-top: 2%;
+      margin-right: 35px;
     }
 }
-/* ******************** END HOW IT WORKS MIN-WIDTH 1100 MEDIA QUERY ******************** */
-
-/* ******************** start HOW IT WORKS MIN-WIDTH 800 MEDIA QUERY ******************** */
-@media screen and (max-width: 800px) {
-  .carousel-cell {
-    width: 75%;
-  }
-}
-/* ******************** end HOW IT WORKS MIN-WIDTH 800 MEDIA QUERY ******************** */
-
-
 /************** HOW IT WORKS HOW IT WORKS HOW IT WORKS HOW IT WORKS******************/
 
 
